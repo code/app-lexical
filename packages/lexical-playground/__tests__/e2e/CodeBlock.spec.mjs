@@ -982,90 +982,71 @@ test.describe('CodeBlock', () => {
   `;
   const EXPECTED_HTML_GOOGLE_SPREADSHEET = html`
     <table class="PlaygroundEditorTheme__table">
-      <colgroup>
-        <col />
-        <col />
-        <col />
-      </colgroup>
-      <tbody>
-        <tr style="height: 21px;">
-          <td
-            class="PlaygroundEditorTheme__tableCell"
-            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
-            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
-              <b>
-                <strong
-                  class="PlaygroundEditorTheme__textBold"
-                  style="white-space: pre-wrap;">
-                  Surface
-                </strong>
-              </b>
-            </p>
-          </td>
-          <td
-            class="PlaygroundEditorTheme__tableCell"
-            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
-            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
-              <i>
-                <em
-                  class="PlaygroundEditorTheme__textItalic"
-                  style="white-space: pre-wrap;">
-                  MWP_WORK_LS_COMPOSER
-                </em>
-              </i>
-            </p>
-          </td>
-          <td
-            class="PlaygroundEditorTheme__tableCell"
-            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
-            <p class="PlaygroundEditorTheme__paragraph">
-              <u>
-                <span
-                  class="PlaygroundEditorTheme__textUnderline"
-                  style="white-space: pre-wrap;">
-                  77349
-                </span>
-              </u>
-            </p>
-          </td>
-        </tr>
-        <tr style="height: 21px;">
-          <td
-            class="PlaygroundEditorTheme__tableCell"
-            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
-            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
-              <span style="white-space: pre-wrap;">Lexical</span>
-            </p>
-          </td>
-          <td
-            class="PlaygroundEditorTheme__tableCell"
-            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
-            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
-              <s>
-                <span
-                  class="PlaygroundEditorTheme__textStrikethrough"
-                  style="white-space: pre-wrap;">
-                  XDS_RICH_TEXT_AREA
-                </span>
-              </s>
-            </p>
-          </td>
-          <td
-            class="PlaygroundEditorTheme__tableCell"
-            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
-            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
-              <span style="white-space: pre-wrap;">sdvd</span>
-              <b>
-                <strong
-                  class="PlaygroundEditorTheme__textBold"
-                  style="white-space: pre-wrap;">
-                  sdfvsfs
-                </strong>
-              </b>
-            </p>
-          </td>
-        </tr>
-      </tbody>
+      <tr style="height: 21px">
+        <td class="PlaygroundEditorTheme__tableCell">
+          <p
+            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
+            dir="ltr">
+            <strong
+              class="PlaygroundEditorTheme__textBold"
+              data-lexical-text="true">
+              Surface
+            </strong>
+          </p>
+        </td>
+        <td class="PlaygroundEditorTheme__tableCell">
+          <p
+            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
+            dir="ltr">
+            <em
+              class="PlaygroundEditorTheme__textItalic"
+              data-lexical-text="true">
+              MWP_WORK_LS_COMPOSER
+            </em>
+          </p>
+        </td>
+        <td class="PlaygroundEditorTheme__tableCell">
+          <p class="PlaygroundEditorTheme__paragraph">
+            <span
+              class="PlaygroundEditorTheme__textUnderline"
+              data-lexical-text="true">
+              77349
+            </span>
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 21px">
+        <td class="PlaygroundEditorTheme__tableCell">
+          <p
+            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
+            dir="ltr">
+            <span data-lexical-text="true">Lexical</span>
+          </p>
+        </td>
+        <td class="PlaygroundEditorTheme__tableCell">
+          <p
+            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
+            dir="ltr">
+            <span
+              class="PlaygroundEditorTheme__textStrikethrough"
+              data-lexical-text="true">
+              XDS_RICH_TEXT_AREA
+            </span>
+          </p>
+        </td>
+        <td class="PlaygroundEditorTheme__tableCell">
+          <p
+            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
+            dir="ltr">
+            <span data-lexical-text="true">sdvd</span>
+            <strong
+              class="PlaygroundEditorTheme__textBold"
+              data-lexical-text="true">
+              sdfvsfs
+            </strong>
+          </p>
+        </td>
+      </tr>
     </table>
   `;
   const CODE_PASTING_TESTS = [
