@@ -31,7 +31,12 @@ import normalizeClassNames from 'shared/normalizeClassNames';
 export {default as markSelection} from './markSelection';
 export {default as mergeRegister} from './mergeRegister';
 export {default as positionNodeOnRange} from './positionNodeOnRange';
-export {$splitNode, isHTMLAnchorElement, isHTMLElement} from 'lexical';
+export {
+  $splitNode,
+  isHTMLAnchorElement,
+  isHTMLElement,
+  isInlineDomNode,
+} from 'lexical';
 export {CAN_USE_DOM} from 'shared/canUseDOM';
 export {
   CAN_USE_BEFORE_INPUT,
