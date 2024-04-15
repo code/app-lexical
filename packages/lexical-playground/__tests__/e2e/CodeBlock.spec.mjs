@@ -1053,14 +1053,16 @@ test.describe('CodeBlock', () => {
           <td
             class="PlaygroundEditorTheme__tableCell"
             style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
-            <span style="white-space: pre-wrap;">sdvd</span>
-            <b>
-              <strong
-                class="PlaygroundEditorTheme__textBold"
-                style="white-space: pre-wrap;">
-                sdfvsfs
-              </strong>
-            </b>
+            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
+              <span style="white-space: pre-wrap;">sdvd</span>
+              <b>
+                <strong
+                  class="PlaygroundEditorTheme__textBold"
+                  style="white-space: pre-wrap;">
+                  sdfvsfs
+                </strong>
+              </b>
+            </p>
           </td>
         </tr>
       </tbody>
