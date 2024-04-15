@@ -982,65 +982,88 @@ test.describe('CodeBlock', () => {
   `;
   const EXPECTED_HTML_GOOGLE_SPREADSHEET = html`
     <table class="PlaygroundEditorTheme__table">
-      <tr style="height: 21px">
-        <td class="PlaygroundEditorTheme__tableCell">
-          <p
-            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
-            dir="ltr">
-            <strong
-              class="PlaygroundEditorTheme__textBold"
-              data-lexical-text="true">
-              Surface
-            </strong>
-          </p>
-        </td>
-        <td class="PlaygroundEditorTheme__tableCell">
-          <p
-            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
-            dir="ltr">
-            <em
-              class="PlaygroundEditorTheme__textItalic"
-              data-lexical-text="true">
-              MWP_WORK_LS_COMPOSER
-            </em>
-          </p>
-        </td>
-        <td class="PlaygroundEditorTheme__tableCell">
-          <p class="PlaygroundEditorTheme__paragraph">
-            <span
-              class="PlaygroundEditorTheme__textUnderline"
-              data-lexical-text="true">
-              77349
-            </span>
-          </p>
-        </td>
-      </tr>
-      <tr style="height: 21px">
-        <td class="PlaygroundEditorTheme__tableCell">
-          <p
-            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
-            dir="ltr">
-            <span data-lexical-text="true">Lexical</span>
-          </p>
-        </td>
-        <td class="PlaygroundEditorTheme__tableCell">
-          <p
-            class="PlaygroundEditorTheme__paragraph PlaygroundEditorTheme__ltr"
-            dir="ltr">
-            <span data-lexical-text="true">XDS_RICH_TEXT_AREA</span>
-          </p>
-        </td>
-        <td
-          class="PlaygroundEditorTheme__tableCell PlaygroundEditorTheme__ltr"
-          dir="ltr">
-          <span data-lexical-text="true">sdvd</span>
-          <strong
-            class="PlaygroundEditorTheme__textBold"
-            data-lexical-text="true">
-            sdfvsfs
-          </strong>
-        </td>
-      </tr>
+      <colgroup>
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr style="height: 21px;">
+          <td
+            class="PlaygroundEditorTheme__tableCell"
+            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
+            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
+              <b>
+                <strong
+                  class="PlaygroundEditorTheme__textBold"
+                  style="white-space: pre-wrap;">
+                  Surface
+                </strong>
+              </b>
+            </p>
+          </td>
+          <td
+            class="PlaygroundEditorTheme__tableCell"
+            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
+            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
+              <i>
+                <em
+                  class="PlaygroundEditorTheme__textItalic"
+                  style="white-space: pre-wrap;">
+                  MWP_WORK_LS_COMPOSER
+                </em>
+              </i>
+            </p>
+          </td>
+          <td
+            class="PlaygroundEditorTheme__tableCell"
+            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
+            <p class="PlaygroundEditorTheme__paragraph">
+              <u>
+                <span
+                  class="PlaygroundEditorTheme__textUnderline"
+                  style="white-space: pre-wrap;">
+                  77349
+                </span>
+              </u>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 21px;">
+          <td
+            class="PlaygroundEditorTheme__tableCell"
+            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
+            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
+              <span style="white-space: pre-wrap;">Lexical</span>
+            </p>
+          </td>
+          <td
+            class="PlaygroundEditorTheme__tableCell"
+            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
+            <p class="PlaygroundEditorTheme__paragraph" dir="ltr">
+              <s>
+                <span
+                  class="PlaygroundEditorTheme__textStrikethrough"
+                  style="white-space: pre-wrap;">
+                  XDS_RICH_TEXT_AREA
+                </span>
+              </s>
+            </p>
+          </td>
+          <td
+            class="PlaygroundEditorTheme__tableCell"
+            style="border: 1px solid black; width: 233.333px; vertical-align: top; text-align: start;">
+            <span style="white-space: pre-wrap;">sdvd</span>
+            <b>
+              <strong
+                class="PlaygroundEditorTheme__textBold"
+                style="white-space: pre-wrap;">
+                sdfvsfs
+              </strong>
+            </b>
+          </td>
+        </tr>
+      </tbody>
     </table>
   `;
   const CODE_PASTING_TESTS = [
@@ -1118,7 +1141,7 @@ test.describe('CodeBlock', () => {
     {
       expectedHTML: EXPECTED_HTML_GOOGLE_SPREADSHEET,
       name: 'Google Spreadsheet',
-      pastedHTML: `<google-sheets-html-origin><style type="text/css"><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--></style><table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" style="table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-collapse:collapse;border:none" data-sheets-root="1"><colgroup><col width="100"/><col width="210"/><col width="100"/></colgroup><tbody><tr style="height:21px;"><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;font-weight:bold;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Surface&quot;}">Surface</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;font-style:italic;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;MWP_WORK_LS_COMPOSER&quot;}">MWP_WORK_LS_COMPOSER</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;text-decoration:underline;text-align:right;" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:77349}">77349</td></tr><tr style="height:21px;"><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Lexical&quot;}">Lexical</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;XDS_RICH_TEXT_AREA&quot;}">XDS_RICH_TEXT_AREA</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;sdvd sdfvsfs&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:5,&quot;2&quot;:{&quot;5&quot;:1}}"><span style="font-size:10pt;font-family:Arial;font-style:normal;">sdvd </span><span style="font-size:10pt;font-family:Arial;font-weight:bold;font-style:normal;">sdfvsfs</span></td></tr></tbody></table>`,
+      pastedHTML: `<google-sheets-html-origin><style type="text/css"><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--></style><table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" style="table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-collapse:collapse;border:none" data-sheets-root="1"><colgroup><col width="100"/><col width="189"/><col width="171"/></colgroup><tbody><tr style="height:21px;"><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;font-weight:bold;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Surface&quot;}">Surface</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;font-style:italic;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;MWP_WORK_LS_COMPOSER&quot;}">MWP_WORK_LS_COMPOSER</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;text-decoration:underline;text-align:right;" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:77349}">77349</td></tr><tr style="height:21px;"><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Lexical&quot;}">Lexical</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;text-decoration:line-through;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;XDS_RICH_TEXT_AREA&quot;}">XDS_RICH_TEXT_AREA</td><td style="overflow:hidden;padding:2px 3px 2px 3px;vertical-align:bottom;" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;sdvd sdfvsfs&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:5,&quot;2&quot;:{&quot;5&quot;:1}}"><span style="font-size:10pt;font-family:Arial;font-style:normal;">sdvd </span><span style="font-size:10pt;font-family:Arial;font-weight:bold;font-style:normal;">sdfvsfs</span></td></tr></tbody></table>`,
     },
   ];
 
